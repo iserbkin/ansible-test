@@ -4,12 +4,12 @@
   connection: network_cli
   gather_facts: false
   tasks:
-#    - name: run command on remote devices
-#      community.routeros.command:
-#        commands: /system resource print
-#      register: mtkupchk
-#    - debug:
-#        var: mtkupchk.stdout_lines
+    - name: run command on remote devices
+      community.routeros.command:
+        commands: /system resource print
+      register: mtkupchk
+    - debug:
+        var: mtkupchk.stdout_lines
 
     - name: collect all facts
       community.routeros.facts:
