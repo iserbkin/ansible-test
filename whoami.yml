@@ -1,0 +1,6 @@
+---
+- name: Run whoami without become
+  hosts: localhost
+  tasks:
+    - name: run command whoami
+      command: whoami
