@@ -11,8 +11,8 @@
     - debug:
         var: mtkupchk.stdout_lines
 
-    - name: collect all facts
-      community.routeros.facts:
-        gather_subset: all
-    - debug:
-        msg: "{{ansible_net_model}}"
+#    - name: collect all factshttps://github.com/iserbkin/ansible-test/blob/master/play.yml
+#      community.routeros.facts:
+#        gather_subset: all
+#    - debug:
+#        msg: "{{ansible_net_model}}"
