@@ -1,6 +1,6 @@
 ---
 - name: Check Mikrotik
-  hosts: ros_routers
+  hosts: routers
   # connection: network_cli
   gather_facts: false
   tasks:
